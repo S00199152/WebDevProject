@@ -1,0 +1,79 @@
+body{
+    background-image: url(/images/index%20background.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: sans-serif;
+}
+
+#shopping{
+    background-image: url(/images/shopping%20background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: sans-serif;
+}
+
+header {
+    background-color: maroon;
+    background-repeat: no-repeat;
+    background-size: auto;
+    height: 80px;
+    color: green;
+    border: 1px;
+    border-style: solid;
+    
+}
+
+header h1 {
+    font-size: 40px;
+    color: chartreuse;
+}
+
+main.container {
+    background-color: white;
+}
+
+h1.welcome {
+    display: block;
+    font-size: 36px;
+}
+
+p.about {
+    display: block;
+    font-size: 30px;
+}
+
+h2.browse {
+    display: block;
+    text-align: center;
+    color: black;
+    font-size: 32px;
+}
+
+img.browse {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 300px;
+    width: 500px;
+}
+
+a.browse{
+    display: block;
+    text-align: center;
+    font-size: 32px;
+}
+
+footer{
+    clear: both;
+    border: 1px solid black;
+    height: 50px;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    background-color: midnightblue;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}

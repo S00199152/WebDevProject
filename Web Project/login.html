@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Log in to your Account - The Game Factory</title>
+        <meta name="description" content="Home Page">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial scale=1">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/custom.css">
+    </head>
+
+    <body>
+        <main class="container">
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+ 
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="index.html">Home/About Us</a>
+      <a class="nav-item nav-link" href="shopping.html">Shop</a>
+    </div>
+    </div>
+    <div class="btn-group">
+    <button type="button" class="btn btn-primary"  id="loginlogout" href="login.html">Login</button>
+    <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" id="dropdownMenuReference" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-reference="parent">
+      <span class="sr-only">Toggle Dropdown</span>
+    </button>
+    <div class="dropdown-menu" id="accountdetails" aria-labelledby="dropdownMenuReference">
+      <a class="dropdown-item" href="userdetails.html">User Details</a>
+
+    </div>
+    </div>
+  
+      
+    <div class="btn-toolbar">
+        <a class="nav-item nav-link" href="checkout.html">
+        <button type="button" class="btn btn-secondary ml-2">
+          Checkout <span class="badge badge-light" id="checkout"></span>
+        </button>
+        </a>
+    </div>  
+
+</nav>       
+    
+    <h1>Log in to your Account</h1>
+    <div class="row">    
+        <div class="col-sm col-md-4"> 
+            <div class="alert alert-danger d-none" role="alert" id="loginerror">The username or password you entered is incorrect. <a href="">Forgot your password?</a></div>    
+            <form name="login" action="" method="get">
+                <div class="form-group">
+                    <label for="getEmail">Email address</label>
+                    <input type="email" class="form-control" id="getEmail" name="email" value="s.khan@email.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="getPassword1">Password</label> 
+                    <input type="password" class="form-control" id="getpassword1" name="password" value="thegamefactory2020" required>
+                </div>    
+                <input type='submit' class="btn btn-primary" value="Login">
+            </form>
+            <p><br> <a href="#">Register Now</a></p>
+
+        </div> 
+    </div>   
+</main>
+    <script src="js/jquery-min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script> 
+    <script src="custom-js/custom.js"></script>
+        <footer>
+            <small>&copy; Shayaan Khan Dec 2020 Class Web Project</small>
+        </footer>
+</body>
+</html>

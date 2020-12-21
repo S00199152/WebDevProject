@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Create an Account - The Game Factory</title>
+        <meta name="description" content="Home Page">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial scale=1">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/custom.css">
+    </head>
+
+    <body>
+        <main class="container">
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+ 
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="index.html">Home/About Us</a>
+      <a class="nav-item nav-link" href="shopping.html">Shop</a>
+    </div>
+    </div>
+    <div class="btn-group">
+    <button type="button" class="btn btn-primary"  id="loginlogout" href="login.html">Login</button>
+    <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" id="dropdownMenuReference" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-reference="parent">
+      <span class="sr-only">Toggle Dropdown</span>
+    </button>
+    <div class="dropdown-menu" id="accountdetails" aria-labelledby="dropdownMenuReference">
+      <a class="dropdown-item" href="userdetails.html">User Details</a>
+
+    </div>
+    </div>
+  
+      
+    <div class="btn-toolbar">
+        <a class="nav-item nav-link" href="checkout.html">
+        <button type="button" class="btn btn-secondary ml-2">
+          Checkout <span class="badge badge-light" id="checkout"></span>
+        </button>
+        </a>
+    </div>  
+
+</nav>
+            
+<h1>Create an Acccount</h1>
+    <div class="row">    
+        <div class="col-sm col-md-4"> 
+            <form name="registration" action="" method="get">
+                <div class="form-group">
+                    <label for="getEmail">Email address</label>
+                    <input type="email" class="form-control" id="getEmail" name="email" placeholder="Enter valid email address">
+                </div>
+                <div class="form-group">
+                    <label for="getPassword1">Password</label> 
+                    <input type="password" class="form-control" id="getPassword1" name="password1" placeholder="Password should contain 8 characters">
+                </div>    
+                <input type='submit' class="btn btn-primary" value="Submit">
+            </form>
+        </div> 
+        <div class="col=sm col-md-8"> 
+            <h2>For debugging etc..</h2>
+            <p>Check the console log in developer tools to see the values from the form. Check <a target='_blank' href='formdemoresults.html'>formdemoresults.html</a> to see the results in another page</p>
+        </div>    
+    </div>   
+    
+<script src="https://js.stripe.com/v3/"></script>
+<form>
+  <label>
+    <input name="cardholder-name" class="field is-empty" placeholder="Jane Doe" />
+    <span><span>Name</span></span>
+  </label>
+  <label>
+    <input class="field is-empty" type="tel" placeholder="(123) 456-7890" />
+    <span><span>Phone number</span></span>
+  </label>
+  <label>
+    <div id="card-element" class="field is-empty"></div>
+    <span><span>Credit or debit card</span></span>
+  </label>
+  <button type="submit">Pay $25</button>
+  <div class="outcome">
+    <div class="error" role="alert"></div>
+    <div class="success">
+      Success! Your Stripe token is <span class="token"></span>
+    </div>
+  </div>
+</form>
+    
+    
+</main>
+    <script src="js/jquery-min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>    
+    <script src="custom-js/custom.js"></script>
+        <footer>
+            <small>&copy; Shayaan Khan Dec 2020 Class Web Project</small>
+        </footer>
+  </body>
+</html>
